@@ -1,5 +1,9 @@
 name: 'test action itself'
 on:
+  push:
+    branches:
+      - main
+      - release/*
   pull_request:
     types: ['opened', 'synchronize', 'ready_for_review']
     paths:
