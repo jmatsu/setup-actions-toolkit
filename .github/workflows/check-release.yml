@@ -18,7 +18,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - run: npm run package
+      - run: ./github/bin/package.bash
       - run: |
           if [[ -n "$(git diff)" ]]; then
             log-error "packaged js in $GITHUB_SHA is not up-to-date."
