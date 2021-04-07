@@ -33,8 +33,6 @@ jobs:
             ${{ runner.os }}-node-
       - run: ./.github/bin/package.bash
       - uses: ./
-        with:
-          version: 0.0.1
       - run: .github/bin/verify_executable_commands.bash
 
   check:
