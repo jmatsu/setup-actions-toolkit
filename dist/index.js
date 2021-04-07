@@ -42,7 +42,7 @@ const path = __importStar(__webpack_require__(622));
 const platform = __importStar(__webpack_require__(238));
 const downloadAndExtact = (version) => __awaiter(void 0, void 0, void 0, function* () {
     const toolCacheDir = platform.getToolCacheDir();
-    const releaseUrl = `https://github.com/jmatsu/actions-toolkit/releases/download/${version}/toolkit-scripts.tar.gz`;
+    const releaseUrl = `https://github.com/jmatsu/actions-toolkit-bash/releases/download/${version}/toolkit-scripts.tar.gz`;
     const gzPath = yield tc.downloadTool(releaseUrl);
     return yield tc.extractTar(gzPath, path.join(toolCacheDir, 'actions-toolkit'));
 });
