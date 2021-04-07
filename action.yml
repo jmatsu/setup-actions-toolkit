@@ -1,0 +1,11 @@
+name: 'setup-actions-toolkit'
+description: 'Setup the script set of GitHub Action Workflow commands in Bash'
+author: 'jmatsu'
+inputs:
+  version:
+    required: false
+    description: 'the version of actions-toolkit-bash. Use latest if unspecified'
+    default: '1.0.0'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
