@@ -10,6 +10,10 @@ For the more details of the scripts, please refer to [jmatsu/actions-toolkit-bas
 
 # Usage
 
+```
+- uses: jmatsu/setup-actions-toolkit@v1
+```
+
 ## Inputs
 
 ### version
