@@ -7,5 +7,5 @@ inputs:
     description: 'the version of actions-toolkit-bash. Use latest if unspecified'
     default: '1.0.0'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
