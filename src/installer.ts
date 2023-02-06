@@ -4,7 +4,7 @@ import * as path from 'path'
 import * as platform from './platform'
 
 const downloadAndExtact: (
-  version: string // eslint-disable-line @typescript-eslint/no-unused-vars
+  version: string
 ) => Promise<string> = async version => {
   const toolCacheDir = platform.getToolCacheDir()
   const releaseUrl = `https://github.com/jmatsu/actions-toolkit-bash/releases/download/${version}/toolkit-scripts.tar.gz`
